@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div id="login-button">
+        <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+        </img>
+      </div>
+      <div id="container">
+        <h1>Log In</h1>
+        <span class="close-btn">
+          <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+        </span>
+      
+        <form>
+            <strong><input type="email" name="email" placeholder="E-mail" required></strong>
+    <input name="Phone Number"  type="tel"  maxlength="10" minlength="10"  placeholder="Phone Number" required>
+    <input type="password" name="Password" placeholder="Password" maxlength="10" minlength="8" required size="8">
+    <input type="submit" class="btn" value="Login">
+          <div id="remember-container">
+            <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
+            <span id="remember">Remember me</span>
+            <span id="forgotten">Forgotten password</span>
+        </div>
+        <h2 id="cnw" style="color:rgb(4, 253, 191)">create account</h2>
+      </form>
+      <h2 style="color:rgb(0, 238, 255)" style="font-size: 100px">Login with  </h2>
+      <form class="twitter log-form">
+        <h3 class="caption fa fa-twitter"></h3>
+        <p>Login with Twitter</p><i class="close">&times;</i>
+        <div class="formset">
+          <div class="form-group">
+            <lable class="form-label">User Name</lable>
+            <input class="form-control" type="text" required/>
+          </div>
+          <div class="form-group">
+            <lable class="form-label">Password</lable>
+            <input class="form-control" type="password"required minlength="8"/>
+          </div>
+          <button class="btn">Log in</button>
+        </div>
+      </form>
+      <form class="google log-form">
+        <h3 class="caption fa fa-google-plus"> </h3>
+        <p>Login with Google  </p><i class="close">&times;</i>
+        <div class="formset">
+          <div class="form-group">
+            <lable class="form-label">User Name</lable>
+            <input class="form-control" type="text" required/>
+          </div>
+          <div class="form-group">
+            <lable class="form-label">Password</lable>
+            <input class="form-control" type="password" required minlength="8"/>
+          </div>
+          <button class="btn">Log in</button>
+        </div>
+      </form>
+      <form class="facebook log-form">
+        <h3 class="caption fa fa-facebook"> </h3>
+        <p>Login with Facebook </p><i class="close">&times;</i>
+        <div class="formset">
+          <div class="form-group">
+            <lable class="form-label">User Name</lable>
+            <input class="form-control" type="text" required/>
+          </div>
+          <div class="form-group">
+            <lable class="form-label">Password</lable>
+            <input class="form-control" type="password" required minlength="8"/>
+          </div>
+          <button class="btn">Log in</button>
+        </div>
+      </form>
+      <h2 style="color: rgb(22, 240, 40);">Contact us</h2>
+      <h2 style="color: rgb(13, 255, 255);">8988143226</h2>
+    </div>
+   
+      
+      <!-- Forgotten Password Container -->
+      <div id="forgotten-container">
+         <h1>Forgotten</h1>
+        <span class="close-btn">
+          <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+        </span>
+      
+        <form>
+          <input type="email" name="email" placeholder="E-mail">
+          <a href="#" class="orange-btn">Get new password</a>
+      </form>
+      </div>
+      <div id="cnw-container">
+        <h1>Create new account</h1>
+       <span class="close-btn">
+         <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+       </span>
+     
+       <form>
+        <input type="text" placeholder="name" required/>
+        <input type="password" placeholder="password" required minlength="8"/>
+        <input type="text" placeholder="email address" required/>
+        <input type="tel"  placeholder="Phone Number" required minlength="10" maxlength="10">
+        <button class="btn">Create</button>
+     </form>
+     </div>
+     
+      <script type="text/javascript" src="anim.js"></script>
+</body>
+</html>
